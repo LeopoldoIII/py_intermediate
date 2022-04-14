@@ -1,5 +1,6 @@
 # Python Intermediate course 
 
+Just examples taken from [here](https://www.youtube.com/watch?v=HGOBQPFzWKo)
 
 
 # enviroment setup 
