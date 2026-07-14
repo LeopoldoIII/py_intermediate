@@ -2,6 +2,20 @@
 
 Just examples taken from [here](https://www.youtube.com/watch?v=HGOBQPFzWKo).
 
+## Repository Structure
+
+The repository is organized by topics and logical concepts to facilitate studying algorithms and preparing for interviews:
+
+* **[01_basic_concepts](file:///Users/usermini/Local/projects/py_intermediate/01_basic_concepts/):** Control flow, recursion, loops (`for`, `range`, `enumerate`).
+* **[02_data_structures](file:///Users/usermini/Local/projects/py_intermediate/02_data_structures/):** Built-in data structures (`lists`, `tuples`, `dictionaries`, `sets`, `strings`) and the `collections` module.
+* **[03_functional_programming](file:///Users/usermini/Local/projects/py_intermediate/03_functional_programming/):** Lambda expressions, list comprehensions, and functional programming functions (`map`, `filter`, `reduce`).
+* **[04_advanced_concepts](file:///Users/usermini/Local/projects/py_intermediate/04_advanced_concepts/):** Advanced concepts such as `closures`, `properties`, `sys` module, and `logging`.
+* **[05_testing](file:///Users/usermini/Local/projects/py_intermediate/05_testing/):** Unit testing with the standard `unittest` module.
+* **[06_integrations_and_scraping](file:///Users/usermini/Local/projects/py_intermediate/06_integrations_and_scraping/):** Working with JSON, HTTP requests using `requests`, and web scraping using `beautifulsoup4`.
+* **[07_best_practices](file:///Users/usermini/Local/projects/py_intermediate/07_best_practices/):** Coding best practices and common bad habits to avoid in Python.
+* **[08_algorithms_and_interviews](file:///Users/usermini/Local/projects/py_intermediate/08_algorithms_and_interviews/):** Practical exercises commonly found in developer interviews (duplicate search, missing numbers, word counts, target sum pairs, etc.).
+* **[scripts](file:///Users/usermini/Local/projects/py_intermediate/scripts/):** Repository external utility scripts.
+
 ## Environment Setup
 
 ### 1. Install pyenv and dependencies
