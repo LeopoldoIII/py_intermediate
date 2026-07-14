@@ -1,55 +1,76 @@
-# Python Intermediate course 
+# Python Intermediate Course
 
-Just examples taken from [here](https://www.youtube.com/watch?v=HGOBQPFzWKo)
+Just examples taken from [here](https://www.youtube.com/watch?v=HGOBQPFzWKo).
 
+## Environment Setup
 
-# enviroment setup 
+### 1. Install pyenv and dependencies
+Ensure you have `pyenv` and library dependencies (like `xz` to avoid missing compression libraries when compiling Python) installed:
 
-Pyenv 
+```bash
+brew install pyenv xz
+```
 
-    brew install pyenv
+### 2. Configure your shell (Zsh)
+To ensure `pyenv` is loaded automatically by your shell, run the following commands to configure Zsh (the default macOS shell):
 
-List version
+```bash
+echo 'export PYENV_ROOT="$HOME/.pyenv"' >> ~/.zshrc
+echo '[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"' >> ~/.zshrc
+echo 'eval "$(pyenv init -)"' >> ~/.zshrc
+```
 
-    pyenv install --list
+Restart your terminal or run `source ~/.zshrc` to apply the changes.
 
-    
-create your venv
+### 3. Install Python Version
+Install the Python version specified in `.python-version` (3.8.10):
 
-    python3 -m venv venv 
+```bash
+pyenv install 3.8.10
+```
 
-source your venv 
+### 4. Create and Activate Virtual Environment
 
-    source venv/bin/activate
+Create the virtual environment:
+```bash
+python -m venv venv
+```
 
-install modules 
+Activate the virtual environment:
+```bash
+source venv/bin/activate
+```
 
-    pip3 install -r requirements.txt
+### 5. Install Dependencies
+Install the required packages using the simplified requirements file:
 
-Issues with pyenv install 
+```bash
+pip install --upgrade pip
+pip install -r requirements.txt
+```
 
-    esta correctamente instalado? 
+---
 
-    atching file 'Tools/ssl/multissltests.py'
-    
-    python-build: use readline from homebrew
-    python-build: use zlib from xcode sdk
-    
-    
-    
-    Traceback (most recent call last):
-      File "<string>", line 1, in <module>
-        import lzma
-      File "/Users/xxxxx/.pyenv/versions/3.14.0/lib/python3.14/lzma.py", line 28, in <module>
-        from _lzma import *
-    ModuleNotFoundError: No module named '_lzma'
-    WARNING: The Python lzma extension was not compiled. Missing the lzma lib?
-    Installed Python-3.14.0 to /Users/xxxxx/.pyenv/versions/3.14.0
+## Troubleshooting
 
-Fix
+### Issue: Missing `_lzma` module during `pyenv install`
+If you see an error warning that the `lzma` extension was not compiled:
 
-    brew install xz
+```text
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+    import lzma
+  File "/Users/xxxxx/.pyenv/versions/3.14.0/lib/python3.14/lzma.py", line 28, in <module>
+    from _lzma import *
+ModuleNotFoundError: No module named '_lzma'
+WARNING: The Python lzma extension was not compiled. Missing the lzma lib?
+```
 
-Then 
+**Fix:**
+Install `xz` via Homebrew, then force reinstall the python version:
 
-    pyenv install x.x.x --force
+```bash
+brew install xz
+pyenv install <python_version> --force
+```
+
