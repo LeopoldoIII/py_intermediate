@@ -9,11 +9,13 @@ The repository is organized by topics and logical concepts to facilitate studyin
 * **[01_basic_concepts](file:///Users/usermini/Local/projects/py_intermediate/01_basic_concepts/):** Control flow, recursion, loops (`for`, `range`, `enumerate`).
 * **[02_data_structures](file:///Users/usermini/Local/projects/py_intermediate/02_data_structures/):** Built-in data structures (`lists`, `tuples`, `dictionaries`, `sets`, `strings`) and the `collections` module.
 * **[03_functional_programming](file:///Users/usermini/Local/projects/py_intermediate/03_functional_programming/):** Lambda expressions, list comprehensions, and functional programming functions (`map`, `filter`, `reduce`).
-* **[04_advanced_concepts](file:///Users/usermini/Local/projects/py_intermediate/04_advanced_concepts/):** Advanced concepts such as `closures`, `properties`, `sys` module, and `logging`.
+* **[04_advanced_concepts](file:///Users/usermini/Local/projects/py_intermediate/04_advanced_concepts/):** Advanced concepts such as `generators`, `closures`, `properties`, `sys` module, and `logging`.
 * **[05_testing](file:///Users/usermini/Local/projects/py_intermediate/05_testing/):** Unit testing with the standard `unittest` module.
 * **[06_integrations_and_scraping](file:///Users/usermini/Local/projects/py_intermediate/06_integrations_and_scraping/):** Working with JSON, HTTP requests using `requests`, and web scraping using `beautifulsoup4`.
-* **[07_best_practices](file:///Users/usermini/Local/projects/py_intermediate/07_best_practices/):** Coding best practices and common bad habits to avoid in Python.
+* **[07_best_practices](file:///Users/usermini/Local/projects/py_intermediate/07_best_practices/):** Coding best practices, SOLID principles, guard clauses, and common bad habits to avoid in Python.
 * **[08_algorithms_and_interviews](file:///Users/usermini/Local/projects/py_intermediate/08_algorithms_and_interviews/):** Practical exercises commonly found in developer interviews (duplicate search, missing numbers, word counts, target sum pairs, etc.).
+* **[09_oop](file:///Users/usermini/Local/projects/py_intermediate/09_oop/):** Object-Oriented Programming (OOP) fundamentals including classes, inheritance, polymorphism, and more.
+* **[Interview](file:///Users/usermini/Local/projects/py_intermediate/Interview/):** Additional coding interview challenges categorized by difficulty.
 * **[scripts](file:///Users/usermini/Local/projects/py_intermediate/scripts/):** Repository external utility scripts.
 
 ## Environment Setup
@@ -47,12 +49,12 @@ pyenv install 3.8.10
 
 Create the virtual environment:
 ```bash
-python -m venv venv
+python3 -m venv .venv
 ```
 
 Activate the virtual environment:
 ```bash
-source venv/bin/activate
+source .venv/bin/activate
 ```
 
 ### 5. Install Dependencies
@@ -88,3 +90,26 @@ brew install xz
 pyenv install <python_version> --force
 ```
 
+### Issue: The version of Python associated with the selected kernel is no longer supported
+
+This usually happens when your virtual environment (`.venv`) points to an outdated Python version (e.g., Python 3.9) that is no longer supported by the Jupyter/VS Code extension.
+
+**Fix:**
+Recreate your virtual environment with a modern version of Python:
+
+```bash
+# 1. Remove the old virtual environment
+rm -rf .venv
+
+# 2. Create a new virtual environment using a modern Python version
+python3 -m venv .venv
+
+# 3. Activate the new environment
+source .venv/bin/activate
+
+# 4. Install the Jupyter kernel and your requirements
+pip install ipykernel
+pip install -r requirements.txt
+```
+
+After completing these steps, select the newly created `.venv` as your kernel in Jupyter/VS Code.
