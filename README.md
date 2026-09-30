@@ -6,7 +6,7 @@ Just examples taken from [here](https://www.youtube.com/watch?v=HGOBQPFzWKo).
 
 The repository is organized by topics and logical concepts to facilitate studying algorithms and preparing for interviews:
 
-* **[01_basic_concepts](file:///Users/usermini/Local/projects/py_intermediate/01_basic_concepts/):** Control flow, recursion, loops (`for`, `range`, `enumerate`).
+* **[01_basic_concepts](file:///Users/usermone/local/projects/py/py_intermediate/01_basic_concepts/):** Control flow, recursion, loops (`for`, `range`, `enumerate`), string methods (`string_methods`), and integer methods (`int_methods`).
 * **[02_data_structures](file:///Users/usermini/Local/projects/py_intermediate/02_data_structures/):** Built-in data structures (`lists`, `tuples`, `dictionaries`, `sets`, `strings`) and the `collections` module.
 * **[03_functional_programming](file:///Users/usermini/Local/projects/py_intermediate/03_functional_programming/):** Lambda expressions, list comprehensions, and functional programming functions (`map`, `filter`, `reduce`).
 * **[04_advanced_concepts](file:///Users/usermini/Local/projects/py_intermediate/04_advanced_concepts/):** Advanced concepts such as `generators`, `closures`, `properties`, `sys` module, and `logging`.
