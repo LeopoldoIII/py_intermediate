@@ -14,7 +14,7 @@ The repository is organized by topics and logical concepts to facilitate studyin
 * **[06_integrations_and_scraping](file:///Users/usermini/Local/projects/py_intermediate/06_integrations_and_scraping/):** Working with JSON, HTTP requests using `requests`, and web scraping using `beautifulsoup4`.
 * **[07_best_practices](file:///Users/usermini/Local/projects/py_intermediate/07_best_practices/):** Coding best practices, SOLID principles, guard clauses, and common bad habits to avoid in Python.
 * **[08_algorithms_and_interviews](file:///Users/usermini/Local/projects/py_intermediate/08_algorithms_and_interviews/):** Practical exercises commonly found in developer interviews (duplicate search, missing numbers, word counts, target sum pairs, etc.).
-* **[09_oop](file:///Users/usermini/Local/projects/py_intermediate/09_oop/):** Object-Oriented Programming (OOP) fundamentals including classes, inheritance, polymorphism, and more.
+* **[09_oop](file:///Users/usermone/local/projects/py/py_intermediate/09_oop/):** Object-Oriented Programming (OOP) fundamentals, the 5 OOP pillars, and deep dive into classes, class vs. instance attributes, dunder methods (`__str__`/`__repr__`), inheritance with `super()`, and polymorphism using enterprise workforce architecture.
 * **[Interview](file:///Users/usermini/Local/projects/py_intermediate/Interview/):** Additional coding interview challenges categorized by difficulty.
 * **[scripts](file:///Users/usermini/Local/projects/py_intermediate/scripts/):** Repository external utility scripts.
 
