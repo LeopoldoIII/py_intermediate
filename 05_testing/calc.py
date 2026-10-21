@@ -1,19 +1,28 @@
-def add(x,y):
-    """Add Function"""
+"""
+Calculator utility module demonstrating typed operations and error boundaries.
+"""
+
+def add(x: float, y: float) -> float:
+    """Add two numbers."""
     return x + y
 
-def subtract(x,y):
-    """Subtract Function"""
+def subtract(x: float, y: float) -> float:
+    """Subtract y from x."""
     return x - y
 
-def multipy(x,y):
-    """Multiply Function"""
+def multiply(x: float, y: float) -> float:
+    """Multiply two numbers."""
     return x * y
 
-def divide(x, y):
-    """Divide Function"""
+# Backward compatibility alias
+multipy = multiply
+
+def divide(x: float, y: float) -> float:
+    """Divide x by y. Raises ValueError on division by zero."""
     if y == 0:
-        raise ValueError('Can not divide by zero!')
+        raise ValueError("Cannot divide by zero!")
     return x / y
 
-
+def power(base: float, exponent: float) -> float:
+    """Raise base to exponent."""
+    return base ** exponent
