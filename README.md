@@ -18,6 +18,10 @@ The repository is organized by topics and logical concepts to facilitate studyin
 * **[Interview](file:///Users/usermini/Local/projects/py_intermediate/Interview/):** Additional coding interview challenges categorized by difficulty.
 * **[scripts](file:///Users/usermini/Local/projects/py_intermediate/scripts/):** Repository external utility scripts.
 
+## Repository Standards & AI Agent Guidelines
+
+For conventions on how to add new topics, levels, and exercises following the 3-phase template (Objective $\rightarrow$ Sample $\rightarrow$ Unanswered Challenge with Asserts) and the strict English code rule, see [AGENTS.md](file:///Users/usermone/local/projects/py/py_intermediate/AGENTS.md).
+
 ## Environment Setup
 
 ### 1. Install pyenv and dependencies
